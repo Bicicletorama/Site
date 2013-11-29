@@ -1,0 +1,106 @@
+/* Elastislide Style */
+.es-carousel-wrapper{
+	padding:0px 0px;
+	
+	position:relative;
+	position:relative;
+	margin-bottom:20px;
+}
+.es-carousel{
+	overflow:hidden;
+	background: #ff5555;
+}
+.es-carousel ul{
+	display:none;
+	margin: 0;
+	padding-left: 84px;
+}
+.es-carousel ul li{
+	height:100%;
+	float:left;
+	display:block;
+}
+.es-carousel ul li a{
+	display:block;
+	border-style:solid;
+	border-color:#222;
+	opacity:1;
+	-webkit-touch-callout:none;
+	/* option */
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.es-carousel ul li.selected
+{
+	
+}
+
+.es-carousel ul li.selected a{
+	border-color:#fff;
+	opacity:1.0;
+}
+
+.es-carousel ul li a img{
+	display:block;
+	border:none;
+	max-height:100%;
+	max-width:100%;
+}
+.es-nav span{
+	position:absolute;
+	top:0%;
+	left:0px;
+	
+	background: #ff5555 url(../../img/arrows.gif) no-repeat 0 0;
+	
+	width:79px;
+	height:160px;
+	text-indent:-9000px;
+	cursor:pointer;
+}
+.es-nav span.es-nav-next{
+	right:0px;
+	left:auto;
+	background-position:-69px 0;
+	
+}
+.es-nav span:hover{
+	opacity:1.0;
+}
+
+
+@media only screen and (min-width: 768px) 
+{
+.es-carousel ul{
+	display:none;
+	margin: 0;
+	padding-left: 70px;
+}
+
+.es-nav span{width: 69px;}
+
+.es-nav span.es-nav-next{
+	right:0px;
+	left:auto;
+	background-position:-69px 0;
+	
+}
+
+.es-carousel ul li.selected{
+	
+	
+	-moz-box-sizing:    border-box;
+   -webkit-box-sizing: border-box;
+    box-sizing:        border-box;
+    border: 1px solid #fff;
+}
+.es-carousel ul li.selected a{
+	
+	opacity:1.0;
+	
+}
+}
